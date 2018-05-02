@@ -1,7 +1,7 @@
 # quebec-point-calculator
 __TO SEE WEBPAGE CLICK [HERE](https://quebec-points-calculator.firebaseapp.com/)__<br>
 This web application allows user to calculate points for Quebec Skilled Worker Program. 
-More information is aviable [here](https://www.immigration-quebec.gouv.qc.ca/en/immigrate-settle/permanent-workers/requirements-programs/index.html)
+More information is aviable [here](https://www.immigration-quebec.gouv.qc.ca/en/immigrate-settle/permanent-workers/requirements-programs/index.html).<br>
 The points are calculated based on [this](https://www.immigration-quebec.gouv.qc.ca/publications/fr/divers/Grille-synthese.pdf) and as the immigration law changed, it may not be accurate. currently, the website calcualtes the rule in October 24, 2017.<br><br><br>
 ![alt text](https://github.com/seungwookim08/quebec-point-calculator/blob/master/img/screentshot1.PNG)
 <br>Frontpage screent shot<br><br>
