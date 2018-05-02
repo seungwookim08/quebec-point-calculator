@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quebec Immigration points calcualtor</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Seungwoo Kim</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Quebec Skilled Worker Points Calculator</h1>
+              <p class="intro-text"></p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+      <h2 class="header">Quebec Skilled Worker Points Calculator</h2>
+      <p class="author"><i>by Seungwoo Kim</i></p>
+      <p class="author"><i>Specific points sheet is availble <a href="http://www.immigration-quebec.gouv.qc.ca/publications/fr/divers/Grille-synthese.pdf" target="_blank">here</a></i></p>
+      <p class="author"><i>Check detailed information <a href="http://www.immigration-quebec.gouv.qc.ca/en/immigrate-settle/permanent-workers/requirements-programs/index.html" target="_blank">here</a></i></p>
+      Choose the elements which indicate your case from drop down menus. You will have to answer all of them; otherwise, the points might be different.
+      <br><br>
+      <h6>Please note that the result might be incorrect. If you want accurate points, you will need to consult with an immigration lawyer or an immigraion consultant</h6>
+      <h6>If you have spouse please click the button <button onclick="showSpouse()">Spouse button</button> </h6>
+      <form>
+         <p><br>Age :
+         <select name=age>
+            <option value=16>35 or less</option>
+            <option value=14>36</option>
+            <option value=12>37</option>
+            <option value=10>38</option>
+            <option value=8>39</option>
+            <option value=6>40</option>
+            <option value=4>41</option>
+            <option value=2>42</option>
+            <option value=0>43 or more</option>
+         </select>
+       </p>
+         <p>Work experience : 
+         <select name=exp>
+            <option value=0>less than 6 months</option>
+            <option value=4>6 months to 23 months</option>
+            <option value=6>24 months to 47 months</option>
+            <option value=8>48 months or more</option>
+         </select></p>
+         <p>Level of Education : 
+         <select name=study>
+            <option value=2>General high school diploma</option>
+            <option value=6>Vocational high school diploma</option>
+            <option value=4>General postsecondary school diploma (full-time for 2 or less than 2 years)</option>
+            <option value=8>Technical postsecondary school diploma (full-time for 3 year) </option>
+            <option value=4>Undergraduate diploma attesting to 1 or more years of full-time studies</option>
+            <option value=6>Undergraduate diploma attesting to 2 or more years of full-time studies</option>
+            <option value=10>Undergraduate diploma attesting to 3 or more years of full-time studies</option>
+            <option value=12>Master's Degree</option>
+            <option value=14>Doctorate</option>
+         </select></p>
+         <p>Area of Training : 
+         <select name=studyDo>
+            <option value=12>A</option>
+            <option value=9>B</option>
+            <option value=6>C</option>
+            <option value=2>D</option>
+            <option value=0>E</option>             
+         </select>
+         <br>If you don't know your area of training information is available <a href="http://www.immigration-quebec.gouv.qc.ca/publications/en/diverses/list-training.pdf" target="_blank">here</a>
+       </p>
+         <p>French listening : 
+         <select name=french1>
+            <option value=0>B1/No test</option>
+            <option value=7>C2</option>
+            <option value=6>C1</option>
+            <option value=5>B2 </option>
+         </select></p>
+        <p> French Speaking : 
+         <select name=french2>
+            <option value=0>B1/No test</option>
+            <option value=7>C2</option>
+            <option value=6>C1</option>
+            <option value=5>B2 </option>
+         </select> <br>The French language points are based on the test you take for example, TCF, TCFQ, TEF, TEFAQ, DEFL, DALF.. Etc. Information available <a href="http://www.immigration-quebec.gouv.qc.ca/en/immigrate-settle/permanent-workers/requirements-programs/language-knowledge.html" target="_blank"> here</a></p>
+        <p>English listening: 
+         <select name=english1>
+            <option value=0>IELTS less than 5.0 / no test </option>
+            <option value=2>IELTS 8.0 or more </option>
+            <option value=1>IELTS 5.0 or more </option>
+         </select></p>  
+         <p>English speaking: 
+         <select name=english2>
+            <option value=0>IELTS less than 5.0 / no test</option>
+            <option value=2>IELTS 7.0 or more</option>
+            <option value=1>IELTS 5.0 ore more</option>
+         </select></p>       
+         <p> English writing: 
+         <select name=english3>
+            <option value=0>IELTS less than 5.0 / no test</option>
+            <option value=1>IELTS 5.0 or more</option>
+         </select></p>
+        <p>English reading: 
+         <select name=english4>
+            <option value=0>IELTS less than 5.0 / no test</option>
+            <option value=1>IELTS 5.0 or more</option>
+         </select><br>In quebec skilled worker immigration program, only IELTS is acceptable exam</p>
+         <p>Quebec stay experience : 
+         <select name=stay>
+            <option value=0>Never stayed</option>
+            <option value=5>3 months or more for work or study</option>
+            <option value=2>3 months or more as a visitor</option>
+            <option value=1>stay in Quebec at least 2 weeks to 3 months </option>
+         </select></p>    
+         <p> Family in Quebec : 
+         <select name=family>
+            <option value=0>No </option>
+            <option value=3>Yes </option>
+            <br>(applicable only if holding permanent resident or citizenship in Quebec, i.e. spouse, parent, children... etc)
+         </select></p>
+        <p>Job validation :
+         <select name=joboffer>
+            <option value=0>No</option>
+            <option value=8>Job validation in Great Montreal Area</option>
+            <option value=10>Job validation elsewhere in Quebec</option>
+         </select></p>
+         <p> Children (if you don't have don't answer) : 
+         <select name=baby>
+            * 4 points for 12 or less years old children, 2 points for 13 or more years old children. maximum 8 points
+            <option value=0> No children</option>
+            <option value=4> 1 child with 12 or less years old(4 points)</option>
+            <option value=8> 2 children with with 12 or less years old (8 points)</option>
+            <option value=6> 1 child with 12 or less years old, and 1 child with 13 or more years old (6 points)</option>
+            <option value=4> 2 children with 13 or more years old (4 points)</option>
+            <option value=6> 3 children with 13 or more years old (6 points)</option>
+            <option value=2> 1 child with 13 or more years old (2 points)</option>
+         </select><br> If you have many children so that there is no case in drop down menu, choose 8 points</p>
+        
+        
+         <div id="spouseDIV" style="display:none;">      
+         <p>Spouse age : 
+            <select name=sponsorAge>
+               <option value=0>43 years old or more</option>
+               <option value=3>35 years old or less</option>
+               <option value=2>36 years old to 39 years old</option>
+               <option value=1>40 years old to 42 years old</option>
+            </select></p>    
+            <p>Spouse level of education : 
+            <select name=sponsorStudy>
+              <option value = 0>None of below </option>
+               <option value=1>General high school diploma</option>
+               <option value=2>Vocational high school diploma</option>
+               <option value=1>General postsecondary school diploma (full-time for 2 or less than 2 years)</option>
+               <option value=2>Technical postsecondary school diploma (full-time for 1 or 2 years) </option>
+               <option value=3>Technical postsecondary school diploma (full-time for 3 year) </option>
+               <option value=1>Undergraduate diploma attesting to 1 or more years of full-time studies</option>
+               <option value=2>Undergraduate diploma attesting to 2 or more years of full-time studies</option>
+               <option value=3>Undergraduate diploma attesting to 3 or more years of full-time studies</option>
+               <option value=4>Master's Degree</option>
+               <option value=4>Doctorate</option>
+            </select></p>
+            <p>Spouse area of training: 
+            <select name=sponsorStudyDo>
+               <option value=0>E/F</option>
+               <option value=4>A</option>
+               <option value=3>B</option>
+               <option value=2>C</option>
+               <option value=1>D</option>
+            </select></p>
+            <p>Spouse French listening : 
+            <select name=sponsorFrenchListening>
+               <option value=0>B1 or less</option>
+               <option value=2>B2</option>
+               <option value=3>C1/C2 </option>
+            </select></p>
+           <p>Spouse French speaking : 
+            <select name=sponsorFrenchSpeaking>
+               <option value=0>B1 or less</option>
+               <option value=2>B2</option>
+               <option value=3>C1/C2 </option>
+            </select></p>            
+         </div>
+         <br>Please note that financial factor is already calculated (If not satisfied, you are not qualified)<br>
+     </form>
+ 
+      <input type=button onclick="calc_score()" value="Check your result">
+
+      <div id="result">
+        
+      </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Seungwoo Kim Contact Information</h2>            
+            <a href="https://seungwoo-kim.firebaseapp.com/index.html">Project webpage</a><br>LinkedIn
+            <a href="https://www.linkedin.com/in/seungwoo-k-29115067/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a><br>Github
+            <a href="https://github.com/seungwookim08" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a><br>Email
+              <a href="mailto:seungwookim08@gmail.com">seungwookim08@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Seungwoo Kim 2018</p>
+      </div>
+    </footer>
+          <script>
+         function showSpouse() {
+             var x = document.getElementById("spouseDIV");
+             if (x.style.display == "none") {
+                 x.style.display = "block";
+             } else {
+                 x.style.display = "none";
+             }
+         }  
+         function calc_score()
+         {          
+          var age = parseInt(document.forms[0].age.value);
+          var exp = parseInt(document.forms[0].exp.value);
+          var study = parseInt(document.forms[0].study.value);
+          var studyDo = parseInt(document.forms[0].studyDo.value);
+          var french = parseInt(document.forms[0].french1.value) + parseInt(document.forms[0].french2.value);
+          var english = parseInt(document.forms[0].english1.value) + parseInt(document.forms[0].english2.value) + parseInt(document.forms[0].english3.value) + parseInt(document.forms[0].english4.value);
+          var stay = parseInt(document.forms[0].stay.value);
+          var family = parseInt(document.forms[0].family.value);
+          var sponsorAge = parseInt(document.forms[0].sponsorAge.value);
+          var sponsorStudy = parseInt(document.forms[0].sponsorStudy.value); 
+          var sponsorStudyDo = parseInt(document.forms[0].sponsorStudyDo.value);
+          var sponsorFrenchListening = parseInt(document.forms[0].sponsorFrenchListening.value);
+          var sponsorFrenchSpeaking = parseInt(document.forms[0].sponsorFrenchSpeaking.value);
+          var joboffer = parseInt(document.forms[0].joboffer.value);
+          var baby = parseInt(document.forms[0].baby.value);
+         
+          var language = french + english;
+          var sejour = stay + family;
+          var sponsor = sponsorFrenchListening + sponsorFrenchSpeaking + sponsorStudyDo + sponsorAge + sponsorStudy;
+          var sum = age + exp + study + studyDo + french + english + stay + family + sponsor + joboffer + baby + 1;
+          var str = "<br>age points: " + age + "<br>exprience points : " + exp + "<br>education background points : " + study + "   domain of study points : " + studyDo + "<br>language points : " + language + "<br>family and stay in Quebec : " + sejour + "<br>children points : " + baby + "<br>financial points : " + 1 + "<br><br>Total point(without spouse points) : " + sum + " points";
+          var total = sum + sponsor;
+          var sponsorExist;
+          var x = document.getElementById("spouseDIV");
+          if (x.style.display == "none")
+            sponsorExist=false;
+          else
+            sponsorExist=true;
+          if(sponsorExist){
+            if (baby == 8) {
+              str += "<br>spouse points : " + sponsor + " Total points(with spouse) : " + total + "<br>Qualified if 61 or more points (your children points are 8)"
+            }
+            else
+            str += "<br>spouse points " + sponsor + " Total points(with spouse) : " + total +  "<br>Qualified if 59 or more points"
+          }
+          else {
+            if (baby == 8){
+              str += "<br>Qualified if 52 or more points (your children points are 8)"  
+            }
+            else
+            str += "<br>Qualified if 50 or more points"
+          }
+          document.getElementById("result").innerHTML = str;
+          return false;
+         }
+        
+      </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.js"></script>
+
+  </body>
+
+</html>
